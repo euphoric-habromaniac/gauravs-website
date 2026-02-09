@@ -1,0 +1,37 @@
+/* Make backgrounds transparent for Vanta.js */
+body {
+  background: transparent !important;
+}
+
+body.colorscheme-dark,
+body.colorscheme-light,
+body.colorscheme-auto {
+  background: transparent !important;
+}
+
+.wrapper {
+  background: transparent !important;
+}
+
+.content {
+  background: transparent !important;
+}
+
+/* Ensure text stays readable */
+.wrapper,
+.content,
+.header,
+.navigation {
+  position: relative;
+  z-index: 1;
+}
+
+/* Vanta.js canvas positioning */
+#vanta-bg canvas {
+  position: fixed !important;
+  top: -219px !important;  /* Move up */
+  left: 50% !important;
+  transform: translateX(-50%) scale(1.2) !important;  /* Center and scale up */
+  min-height: 120vh !important;
+  min-width: 120vw !important;
+}

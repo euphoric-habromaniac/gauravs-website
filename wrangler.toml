@@ -1,0 +1,10 @@
+# Cloudflare Pages configuration
+name = "gaurav-website"
+compatibility_date = "2024-01-01"
+
+[build]
+command = "hugo --minify"
+directory = "public"
+
+[build.environment]
+HUGO_VERSION = "0.125.0"

@@ -1,0 +1,18 @@
+# Build output
+public/
+resources/_gen/
+
+# Editor
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build lock
+.hugo_build.lock
+
+# Cloudflare
+.wrangler/
